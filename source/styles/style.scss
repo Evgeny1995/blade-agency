@@ -1,0 +1,23 @@
+// переменные
+@import "./variables.scss";
+
+
+// глобальные стили
+
+
+@import "global.scss";
+@import "mixins/global.scss";
+
+// шрифты
+
+@import "fonts/fonts.scss";
+
+// анимации
+
+@import "animations/animate.scss";
+
+// стили блоков
+
+@import "components/header.scss";
+@import "components/preBookingTickets.scss";
+@import "components/footer.scss";

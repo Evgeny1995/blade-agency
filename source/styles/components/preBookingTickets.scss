@@ -1,0 +1,371 @@
+.page-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-main__pre-booking-tickets__wrap {
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 44px 30px 64px 16px;
+  // background: linear-gradient(
+  //   121.1deg,
+  //   rgba(101, 78, 163, 0.87) 35.26%,
+  //   rgba(95, 75, 139, 0.87) 88.11%
+  // );
+  background-color: $bg-purpule1;
+  background-image: url(../../img/png/backgr-letters/bck-mob-tab-letters.png);
+  background-repeat: no-repeat;
+  background-position: center 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: auto;
+}
+
+.pre-booking-tickets__link {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $bg-yellow1;
+  margin: 0 auto 22px auto;
+  width: 270px;
+}
+
+.pre-booking-tickets__title {
+  font-family: "Playfair-Display", "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35.2px;
+  color: $col-white;
+  max-width: 270px;
+  margin: 0 auto 40px auto;
+}
+
+.pre-booking-tickets__list {
+  padding: 0 0 0 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.pre-booking-list__item {
+  width: auto;
+  height: auto;
+  padding: 0 0 0 0px;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: $col-white;
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+// .pre-booking-list__text {
+// margin: 0 0 0 17px;
+// }
+
+.pre-booking-list__text-top {
+  margin: 0 0 0 17px;
+}
+.pre-booking-list__text-midle {
+  margin: 0 0 0 26px;
+}
+
+.pre-booking-list__text-bottom {
+  margin: 0 0 0 10px;
+}
+
+.pre-booking-tickets__btn {
+  width: 274px;
+  height: 68px;
+  margin: 0 auto;
+  padding: 0 0 0 23px;
+  text-align: left;
+  background-color: $col-white;
+  border: none;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: $col-black;
+  background: linear-gradient(to left, #f2c03f 78px, white 20%);
+  position: relative;
+  transition: 0.4s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 21px;
+    width: 36px;
+    height: 14px;
+    background: url("../../img/svg/pre-booking-btn/btn__pre-booking-list__arrow-black.svg")
+      no-repeat;
+    transition: 0.4s;
+  }
+
+  &:hover::after {
+    background: url("../../img/svg/pre-booking-btn/btn__pre-booking-list__arrow-white.svg")
+      no-repeat;
+    transition: 0.4s;
+  }
+
+  &:active::after {
+    background: url("../../img/svg/pre-booking-btn/btn__pre-booking-list__arrow-yellow.svg")
+      no-repeat;
+    transition: 0.4s;
+  }
+
+  &:hover {
+    color: $bg-yellow1;
+    transition: 0.4s;
+  }
+
+  &:active {
+    color: yellow;
+    transition: 0.4s;
+  }
+}
+
+.pre-booking-tickets__swiper-wrap {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-main__pre-booking-tickets__wrap {
+    min-width: 768px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 70px 30px 154px 40px;
+    background-image: url("../../img/png/backgr-letters/bck-tab-letters.png");
+    background-color: $bg-purpule1;
+    position: relative;
+  }
+
+  .pre-booking-tickets__link {
+    font-family: "Lato", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin: 0 0 0 0;
+  }
+
+  .pre-booking-tickets__title {
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 61.6px;
+    max-width: 550px;
+    margin: 40px auto 0 0;
+    padding: 0;
+  }
+
+  .pre-booking-tickets__list {
+    margin: 76px 0 60px 0;
+  }
+
+  .pre-booking-tickets__btn {
+    margin: 0;
+  }
+
+  .pre-booking-tickets__swiper-wrap {
+    position: absolute;
+    width: 450px;
+    z-index: auto;
+    top: 409.5px;
+    right: -3px;
+    display: block;
+  }
+
+  // .swiper-slide {
+  // }
+
+  .pre-booking-tickets__slide-photo1 {
+    position: absolute;
+    top: 7px;
+  }
+
+  .pre-booking-tickets__slide-photo2 {
+    position: absolute;
+    top: 7px;
+  }
+
+  .pre-booking-tickets__swiper__img {
+    object-fit: contain;
+  }
+
+  .swiper-btn-next {
+    position: absolute;
+    top: 505px;
+    right: 42px;
+    z-index: 1;
+  }
+  .swiper-btn-prev {
+    position: absolute;
+    top: 505px;
+    right: 60px;
+    z-index: 1;
+  }
+
+  .swiper-btn-prev path:hover {
+    stroke: $bg-yellow1;
+  }
+  .swiper-btn-next path:hover {
+    stroke: $bg-yellow1;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-main__pre-booking-tickets__wrap {
+    min-width: 1920px;
+    max-width: 3480px;
+    margin: 0 auto;
+    padding: 163px 0 52px 144px;
+    background-image: url(../../img/png/backgr-letters/bck-desc-letters.png);
+    background-position: 20px 30px;
+    background-color: $bg-purpule1;
+    position: relative;
+  }
+
+  .pre-booking-tickets__title {
+    font-size: 72px;
+    line-height: 79.2px;
+    max-width: 865px;
+    margin: 20px auto 0 0;
+  }
+
+  .pre-booking-tickets__list {
+    margin: 76px 0 60px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pre-booking-list__item {
+    width: 400px;
+    padding: 0px 31px 0px 37px;
+    font-family: "Lato", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: $col-white;
+    margin: 0 0 50px 0;
+    border-right: 1px solid $col-grey2;
+    justify-content: space-between;
+  }
+
+  .pre-booking-list__item__somthing {
+    width: 55px;
+    height: 35px;
+  }
+  .pre-booking-list__item:nth-child(1) {
+    padding: 0 24px 0 0px;
+  }
+
+  .pre-booking-list__item:nth-child(3) {
+    border-right: none;
+    padding: 0 0 0 41px;
+  }
+
+  .pre-booking-list__text-top {
+    width: 103px;
+    margin: 0 0 0 14px;
+  }
+  .pre-booking-list__text-midle {
+    width: 170px;
+    margin: 0 0 0 6px;
+  }
+
+  .pre-booking-list__text-bottom {
+    width: 200px;
+    margin: 0 0 0 3px;
+  }
+
+  .pre-booking-tickets__btn {
+    width: 407px;
+    height: 93px;
+    margin: 0 auto 142px 0;
+    padding: 0 0 0 64px;
+    text-align: left;
+    background-color: $col-white;
+    border: none;
+    font-family: "Lato", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: $col-black;
+    background: linear-gradient(to left, #f2c03f 111px, white 20%);
+    position: relative;
+    transition: 0.4s;
+
+    &::after {
+      right: 39px;
+      top: 37px;
+    }
+  }
+
+  .pre-booking-tickets__desc-social {
+    margin: 142px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .desc-social-list__item {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    opacity: 0.32;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .item-facebook {
+    margin-right: 24px;
+    background: url("../../img/svg/facebook-icon.svg") no-repeat center center;
+  }
+
+  .item-inst {
+    background: url("../../img/svg/instagram-icon.svg") no-repeat center center;
+    margin-right: 24px;
+  }
+
+  .item-twitter {
+    background: url("../../img/svg/twitter-icon.svg") no-repeat center center;
+  }
+
+  .pre-booking-tickets__swiper-wrap {
+    position: absolute;
+    width: 770px;
+    // height: 908px;
+    z-index: auto;
+    top: 101px;
+    right: 0px;
+    display: block;
+  }
+
+  .pre-booking-tickets__swiper-picture {
+    top: 4px;
+  }
+
+  // .pre-booking-tickets__slide-photo2 {
+  //   // position: absolute;
+  //   // top: 7px;
+  // }
+}

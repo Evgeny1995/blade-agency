@@ -10,11 +10,6 @@
   max-width: 768px;
   margin: 0 auto;
   padding: 44px 30px 64px 16px;
-  // background: linear-gradient(
-  //   121.1deg,
-  //   rgba(101, 78, 163, 0.87) 35.26%,
-  //   rgba(95, 75, 139, 0.87) 88.11%
-  // );
   background-color: $bg-purpule1;
   background-image: url(../../img/png/backgr-letters/bck-mob-tab-letters.png);
   background-repeat: no-repeat;
@@ -71,10 +66,6 @@
   flex-wrap: nowrap;
   align-items: center;
 }
-
-// .pre-booking-list__text {
-// margin: 0 0 0 17px;
-// }
 
 .pre-booking-list__text-top {
   margin: 0 0 0 17px;
@@ -183,48 +174,67 @@
 
   .pre-booking-tickets__swiper-wrap {
     position: absolute;
-    width: 450px;
+    max-height: 867px;
+    min-width: 406px;
+    max-width: 645px;
+    width: 47%;
     z-index: auto;
-    top: 409.5px;
-    right: -3px;
+    bottom: -4px;
+    right: 0;
     display: block;
   }
 
-  // .swiper-slide {
-  // }
-
-  .pre-booking-tickets__slide-photo1 {
-    position: absolute;
-    top: 7px;
+  .pre-booking-tickets__swiper-wrap .swiper-slide {
+    width: 100%;
+    max-height: 867px;
   }
 
-  .pre-booking-tickets__slide-photo2 {
-    position: absolute;
-    top: 7px;
+  .pre-booking__img {
+    width: 100%;
+    max-width: 645px;
+    min-height: 548px;
+    max-height: 867px;
   }
 
-  .pre-booking-tickets__swiper__img {
-    object-fit: contain;
-  }
-
-  .swiper-btn-next {
+  .pre-booking__btn-next {
     position: absolute;
-    top: 505px;
-    right: 42px;
+    background: url("../../img/svg/pre-booking-btn/arrow-right.svg") center
+      center no-repeat;
+    bottom: 33px;
+    right: 77px;
     z-index: 1;
-  }
-  .swiper-btn-prev {
-    position: absolute;
-    top: 505px;
-    right: 60px;
-    z-index: 1;
+    width: 14px;
+    height: 28px;
+    transition: 0.3s;
+    opacity: 0.99;
+
+    &:hover {
+      background: url("../../img/svg/pre-booking-btn/arrow-right-big-yellow.svg")
+        center center no-repeat;
+      transform: scale(1.5);
+    }
   }
 
-  .swiper-btn-prev path:hover {
-    stroke: $bg-yellow1;
+  .pre-booking__btn-prev {
+    position: absolute;
+    background: url("../../img/svg/pre-booking-btn/arrow-left.svg") center
+      center no-repeat;
+    bottom: 33px;
+    right: 106px;
+    z-index: 1;
+    width: 14px;
+    height: 28px;
+    opacity: 0.99;
+
+    &:hover {
+      background: url("../../img/svg/pre-booking-btn/arrow-left-big-yellow.svg")
+        center center no-repeat;
+      transform: scale(1.5);
+    }
   }
-  .swiper-btn-next path:hover {
-    stroke: $bg-yellow1;
+
+  .swiper-btn__svg:hover path {
+    stroke: $bg-yellow3;
   }
 }
 
@@ -235,7 +245,8 @@
     margin: 0 auto;
     padding: 163px 0 52px 144px;
     background-image: url(../../img/png/backgr-letters/bck-desc-letters.png);
-    background-position: 20px 30px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
     background-color: $bg-purpule1;
     position: relative;
   }
@@ -353,9 +364,8 @@
   .pre-booking-tickets__swiper-wrap {
     position: absolute;
     width: 770px;
-    // height: 908px;
     z-index: auto;
-    top: 101px;
+    top: 181px;
     right: 0px;
     display: block;
   }
@@ -363,9 +373,4 @@
   .pre-booking-tickets__swiper-picture {
     top: 4px;
   }
-
-  // .pre-booking-tickets__slide-photo2 {
-  //   // position: absolute;
-  //   // top: 7px;
-  // }
 }

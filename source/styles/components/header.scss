@@ -98,6 +98,7 @@
 }
 
 .page-header__row-bottom {
+  overflow: hidden;
   height: 0px;
   min-width: 320px;
   max-width: 767px;
@@ -191,20 +192,21 @@
   &:hover {
     opacity: 1;
   }
-
-
-
-
-
-
-
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+
   .page-header__row-top {
     min-width: 768px;
     max-width: 1920px;
     padding: 0 50px 0 24px;
+
   }
 
   .row-top__page-language__mob-tab {
@@ -212,6 +214,7 @@
   }
 
   .page-header__row-bottom {
+    overflow: hidden;
     height: 0;
     min-width: 768px;
     max-width: 1920px;

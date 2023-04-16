@@ -15,6 +15,7 @@
   min-width: 300px;
   max-width: 450px;
   margin: 0 auto 40px 9.3%;
+  width: 200px;
 }
 
 ///.........Стили swiper.........///
@@ -45,7 +46,7 @@
   flex-shrink: 0;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .internal-slider__slide {
@@ -246,7 +247,8 @@
 
 .members__slider__pagination {
   position: absolute;
-  bottom: -5px !important;
+  bottom: 0px !important;
+
   text-align: center;
   z-index: 1;
 }
@@ -396,7 +398,7 @@
     position: absolute;
     top: 50%;
     right: 27%;
-    z-index: 100;
+    z-index: 1;
     width: 12px;
     height: 22px;
     opacity: 0.32;
@@ -410,7 +412,7 @@
     position: absolute;
     top: 50%;
     right: 27%;
-    z-index: 100;
+    z-index: 1;
     width: 12px;
     height: 22px;
     opacity: 0.32;
@@ -460,7 +462,7 @@
     position: absolute;
     top: 50%;
     left: 0px;
-    z-index: 100;
+    z-index: 1;
     width: 12px;
     height: 22px;
     opacity: 0.32;
@@ -494,11 +496,14 @@
 @media (min-width: 1920px) {
   .page-main__members-wrap {
     padding: 0;
+    width: 1698px;
+    margin: 0 auto;
   }
 
   .members__external-slider {
     padding: 0;
-    width: 1586px;
+    max-width: 1586px  ;
+    width: 1586px  ;
     margin-bottom: 40px;
   }
 
@@ -528,31 +533,51 @@
   }
 
   .members-slider__row-bottom {
-    max-width: 100%;
-    min-width: 420px;
-    margin: 0 10.2% 30px auto;
+    width: 420px;
+    margin: 0 0 30px 21px !important;
   }
-
+  .members-slider__col-left {
+    margin: 0 !important;
+  }
   .members-external__btn-prev {
     display: block;
     position: absolute;
     top: 56.6%;
-    left: 151px;
-    z-index: 100;
+    left: 7px;
+    z-index: 1;
     width: 32px;
     height: 64px;
-    opacity: 0.32;
+    opacity: 1;
+    background: url("../../img/svg/judges-icon/arrow-prev.svg") no-repeat center
+      center;
+    &:hover {
+      background: url("../../img/svg/judges-icon/arrow-prev-yellow.svg")
+        no-repeat center center;
+      transform: scale(1.25);
+      transition: 0.3s;
+      opacity: 1;
+    }
   }
 
   .members-external__btn-next {
     display: block;
     position: absolute;
     top: 56.6%;
-    right: 54px;
-    z-index: 100;
+    right: -47px;
+    z-index: 1;
     width: 32px;
     height: 64px;
-    opacity: 0.32;
+    opacity: 1;
+    background: url("../../img/svg/judges-icon/arrow-next.svg") no-repeat center
+      center;
+
+    &:hover {
+      background: url("../../img/svg/judges-icon/arrow-next-yellow.svg")
+        no-repeat center center;
+      transform: scale(1.25);
+      transition: 0.3s;
+      opacity: 1;
+    }
   }
 
   .members-button-prev1 {

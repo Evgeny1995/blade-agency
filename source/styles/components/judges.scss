@@ -1,0 +1,273 @@
+.page-main__judges {
+  margin: 64px auto 50px auto;
+}
+
+.judges__title {
+  font-family: "Playfair-Display", "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40.52px;
+  color: $col-black2;
+  margin: 0 auto 30px 4%;
+  width: 320px;
+}
+
+.judges__slider-wrap {
+  max-width: 100%;
+  // margin: 0 auto; 454px
+}
+
+.judges-slider {
+  display: flex;
+  width: 100%;
+}
+
+.judges-slider__slide {
+  max-width: 454px;
+}
+
+// .judges-slider__judge-photo {
+// }
+
+.judge-photo__img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: -5px;
+}
+
+.judges-slider__judge-description {
+  background-color: $col-grey3;
+  padding: 20px 15px 24px 15px;
+  width: 100%;
+}
+
+// .judge-description__name-country {
+// }
+
+.judge-description__name {
+  width: 250px;
+  margin: 0;
+  font-family: "Playfair-Display", "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30.8px;
+  color: $col-black2;
+}
+
+.judge-description__name:nth-child(1) {
+  width: 150px;
+}
+
+.judge-description__coutry {
+  margin: 11px auto 16px auto;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: $col-black2;
+  opacity: 0.32;
+}
+
+// .judge-description__achievements {
+// }
+
+.judge-description-achievements__text {
+  text-align: left;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: $col-black;
+  opacity: 0.64;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.judge-description__social-wrap {
+  display: flex;
+  justify-content: right;
+}
+
+.judge-description-social__list {
+  display: flex;
+}
+
+.judge-description-social__item {
+  margin-left: 19px;
+}
+
+.judge-description-social__item a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  opacity: 0.32;
+}
+
+.judge-description-social__inst {
+  background: url("../../img/svg/members-social-icon/insta.svg") no-repeat
+    center center;
+
+  &:hover {
+    background: url("../../img/svg/members-social-icon/insta-hover.svg")
+      no-repeat center center;
+  }
+}
+
+.judge-description-social__facebook {
+  background: url("../../img/svg/members-social-icon/fb.svg") no-repeat center
+    center;
+
+  &:hover {
+    background: url("../../img/svg/members-social-icon/fb-hover.svg") no-repeat
+      center center;
+  }
+}
+
+.judge-description-social__twitter {
+  background: url("../../img/svg/members-social-icon/twitter.svg") no-repeat
+    center center;
+
+  &:hover {
+    background: url("../../img/svg/members-social-icon/twitter-hover.svg")
+      no-repeat center center;
+  }
+}
+
+.judges-slider-pagination {
+  text-align: center;
+  margin-top: 20px;
+  z-index: 3;
+}
+
+.judges-slider-pagination .swiper-pagination-bullet {
+  margin: 0 4px;
+  &:active {
+    background-color: $bg-purpule1;
+  }
+}
+
+.judges-slider__btn-prev {
+  display: none;
+}
+
+.judges-slider__btn-next {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-main__judges {
+    margin: 64px 0 50px 48px;
+  }
+
+  .judges__title {
+    width: 400px;
+    font-size: 56px;
+    line-height: 61.6px;
+    margin: 0 auto 73px 0;
+  }
+
+  .judges-slider__slide {
+    width: 470px;
+    max-width: 470px;
+    text-align: left;
+    background: url("../../img/png/judges/frame.png") no-repeat right 84px;
+  }
+
+  .judges-slider__slide-wrap {
+    max-width: 454px;
+  }
+
+  .judges-slider__judge-description {
+    background-color: $col-grey3;
+    padding: 0 34px 24px 34px;
+    width: 100%;
+  }
+
+  .judge-description__name-country {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .judge-description__name {
+    width: 320px;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 32px 0 18px 0;
+  }
+  .judge-description__name:nth-child(1) {
+    width: 180px;
+  }
+
+  .judge-description__coutry {
+    margin: 34px 0 0 0;
+  }
+
+  .judge-description-achievements__text {
+    width: 325px;
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
+
+  .judges-slider-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-main__judges {
+    margin: 64px 174px 108px 145px;
+  }
+
+  .judges__title {
+    width: 475px;
+    font-size: 72px;
+    line-height: 91px;
+    margin: 0 auto 73px 0;
+  }
+
+  .judges__slider-wrap {
+    max-width: 1506px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .judges-slider__btn-prev {
+    display: block;
+    position: absolute;
+    top: 265px;
+    left: -97px;
+    z-index: 1;
+    width: 32px;
+    height: 64px;
+    background: url("../../img/svg/judges-icon/arrow-prev.svg") no-repeat center center;
+
+    &:hover {
+      background: url("../../img/svg/judges-icon/arrow-prev-yellow.svg") no-repeat center center;
+      transform: scale(1.25);
+      transition: 0.3s;
+
+    }
+  }
+
+  .judges-slider__btn-next {
+    display: block;
+    position: absolute;
+    top: 265px;
+    right: -97px;
+    z-index: 1;
+    width: 32px;
+    height: 64px;
+    background: url("../../img/svg/judges-icon/arrow-next.svg") no-repeat center center;
+
+    &:hover {
+      background: url("../../img/svg/judges-icon/arrow-next-yellow.svg") no-repeat center center;
+      transform: scale(1.25);
+      transition: 0.3s;
+    }
+  }
+}

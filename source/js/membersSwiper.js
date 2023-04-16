@@ -15,7 +15,7 @@ var main = new Swiper(".members__external-slider", {
     4000: {
       slidesPerView: 3,
       loop: true,
-      spaceBetween: 13,
+      spaceBetween: 53,
     },
   },
   pagination: {
